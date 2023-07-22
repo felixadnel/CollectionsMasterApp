@@ -145,7 +145,7 @@ namespace CollectionsMasterConsoleUI
         {
             for (int i = numberList.Count - 1; i >= 0; i--)
             {
-                if (numberList[1] % 2! == 0)
+                if (numberList[i] % 2 != 0)
                 {
                     numberList.RemoveAt(i);
                 }
