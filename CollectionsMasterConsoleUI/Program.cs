@@ -100,22 +100,27 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("All Numbers:");
             //UNCOMMENT this method to print out your numbers from arrays or lists
             NumberPrinter(numList);
-            
+            Console.WriteLine($"Current Count: {numList.Count}");
+
             Console.WriteLine("-------------------");
 
 
             //TODO: Create a method that will remove all odd numbers from the list then print results
-            Console.WriteLine("Evens Only!"); 
+
+            Console.WriteLine("Evens Only!!");
 
             OddKiller(numList);
-            
+            Console.WriteLine($"Current Count: {numList.Count}");
+
             Console.WriteLine("------------------");
 
             //TODO: Sort the list then print results
-            Console.WriteLine("Sorted Odds!!");
+            Console.WriteLine("Sorted Evens!!");
+
             numList.Sort();
             NumberPrinter(numList);
-            
+            Console.WriteLine($"Current Count: {numList.Count}");
+
             Console.WriteLine("------------------");
 
             //TODO: Convert the list to an array and store that into a variable
@@ -153,6 +158,7 @@ namespace CollectionsMasterConsoleUI
             NumberPrinter(numberList);
         }
 
+ 
         private static void NumberChecker(List<int> numberList, int searchNumber)
         {
             if (numberList.Contains(searchNumber))
